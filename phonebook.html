@@ -14,7 +14,7 @@
     </form>
   </div>
   <div class="col-6 md-6" style="text-align: right">
-        <div class="p-3 border bg-light"> Create New <a href ="file:///home/naanal-user/Desktop/fouziya/html%20sample/create%20new.html"> </a> <button type="button" class="btn btn-primary"> + </button>
+        <div class="p-3 border bg-light" >Create New <a href ="file:///home/naanal-user/Desktop/fouziya/html%20sample/create%20new.html"> <button type="button" class="btn btn-primary">+</button></a> 
       </div>        
   </div>
 </div>
@@ -34,7 +34,6 @@
         </div>
         <button class="btn btn-primary" @click="saveContact()">Submit</button>
     </div>
-
 <table class="table table-striped ">
     <tr>
         <th>First Name</th>
@@ -72,10 +71,9 @@
       deleteContact(index) {
          this.contacts.splice(index,1);
       },
-      
       editContact(index)
        {        
-        this.firstName = this.contacts[index].firstName;
+        this.firstName = this.contacts[index].firstName 
         this.lastName = this.contacts[index].lastName;
         this.phoneNo = this.contacts[index].phoneNo;
        }
